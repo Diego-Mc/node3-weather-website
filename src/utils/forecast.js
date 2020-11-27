@@ -11,7 +11,7 @@ const forecast = (lat, long, callback) => {
 			const currForecast = weatherData.current;
 			callback(
 				undefined,
-				`${currForecast.weather_descriptions[0]}. It is currently ${currForecast.temperature} degrees out. It feels like ${currForecast.feelslike} degrees out.`
+				`${currForecast.weather_descriptions[0]}. It is currently ${currForecast.temperature} degrees out. It feels like ${currForecast.feelslike} degrees out. wind speed is ${currForecast.wind_speed} knots.`
 			);
 		}
 	});
